@@ -15,6 +15,6 @@ class Cliente extends Model {
         'email', 
         'endereco_id'
     ];
-    protected $table = "clientes";
+    
     
 }
