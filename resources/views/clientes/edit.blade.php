@@ -1,4 +1,4 @@
-@extends('template.main', ['menu' => "admin", 'submenu' => "Novo Cliente"])
+@extends('template.main', ['titulo' => "Alterar Cliente"])
 <!-- Preenche o conteúdo da seção "titulo" -->
 @section('titulo') Clientes @endsection
 <!-- Preenche o conteúdo da seção "conteudo" -->
@@ -28,8 +28,8 @@
                     type="text" 
                     class="form-control" 
                     name="email" 
-                    placeholder="Biografia"
-                    value="{{$dados->biografia}}"
+                    placeholder="email"
+                    value="{{$dados->email}}"
                 />
                 <label for="email">Email</label>
             </div>
