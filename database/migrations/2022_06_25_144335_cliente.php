@@ -12,7 +12,7 @@ class Cliente extends Migration {
             $table->id();
             $table->string('nome');
             $table->string('email')->unique();
-            $table->unsignedBigInteger('endereco_id');
+            $table->unsignedBigInteger('endereco_id')->nullable();
             $table->foreign('endereco_id')->references('id')->on('enderecos');
             $table->timestamps();
         });

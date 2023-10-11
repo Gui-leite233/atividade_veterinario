@@ -40,7 +40,7 @@ class ClienteController extends Controller
         Cliente::create([
             'nome' => mb_strtoupper($request->nome, 'UTF-8'),
             'email' => mb_strtoupper($request->email, 'UTF-8'),
-            //'endereco_id' => auth()->id() 
+            'endereco_id' => $request->endereco_id
         ]);
         
         return redirect()->route('clientes.index');
